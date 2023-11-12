@@ -1,0 +1,32 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo:hover,
+.btn:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.nav_btns {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -50px;
+}
+
+.btn {
+  height: 30px;
+  width: 60px;
+  font-size: 12px;
+  padding: 0;
+}

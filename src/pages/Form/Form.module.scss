@@ -1,0 +1,12 @@
+.form {
+  width: 500px;
+}
+
+.input {
+  background-color: gray;
+  color: white;
+
+  &::placeholder {
+    color: white;
+  }
+}

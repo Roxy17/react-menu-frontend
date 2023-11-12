@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 0 20px 0;
+}
+
+.image {
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.description {
+  width: 300px;
+  font-size: 12px;
+}
