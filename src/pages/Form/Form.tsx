@@ -3,6 +3,7 @@ import { Button, Form as FormAntd, Input } from "antd";
 import { v4 } from "uuid";
 
 import styles from "./Form.module.scss";
+import { useNavigate } from "react-router-dom";
 
 const { TextArea } = Input;
 
@@ -20,6 +21,7 @@ interface IFetchBody {
 }
 
 export const Form = () => {
+  const navigate = useNavigate();
   const addMenu = async (body: IFetchBody) => {
     try {
       const response = await fetch("http://localhost:5000/add-menu", {
@@ -30,6 +32,9 @@ export const Form = () => {
         body: JSON.stringify(body),
       });
       const resData = await response.json();
+      if (resData) {
+        navigate("/get-menu");
+      }
       console.log("resData", resData);
     } catch (err) {
       if (err instanceof Error) {

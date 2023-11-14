@@ -10,6 +10,10 @@ export const Header = () => {
     navigate("/");
   };
 
+  const addCuisineBtnClickHandler = () => {
+    navigate("/add-menu-form");
+  };
+
   const getMenu = () => {
     navigate("/get-menu");
   };
@@ -28,6 +32,10 @@ export const Header = () => {
         <div className={styles.nav_btns}>
           <button className={styles.btn} onClick={getHome}>
             Home
+          </button>
+
+          <button className={styles.btn} onClick={addCuisineBtnClickHandler}>
+            Add cuisine
           </button>
 
           <button className={styles.btn} onClick={getMenu}>
