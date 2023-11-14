@@ -22,6 +22,7 @@ interface IFetchBody {
 
 export const Form = () => {
   const navigate = useNavigate();
+
   const addMenu = async (body: IFetchBody) => {
     try {
       const response = await fetch("http://localhost:5000/add-menu", {
